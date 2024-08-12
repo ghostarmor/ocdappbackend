@@ -134,7 +134,7 @@ cython_debug/
 .vscode/
 
 # Docker
-dockerfile
+# dockerfile
 .dockerignore
 
 # CSV files (assuming you do not wish to track these in version control)
