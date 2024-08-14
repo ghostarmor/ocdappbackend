@@ -95,7 +95,7 @@ def ask_question(query: Query):
     chat_completion = openai.chat.completions.create(
         model="meta-llama/Meta-Llama-3.1-8B-Instruct",
         messages=[
-                {"role": "system", "content": "Your task is to state the relation (if there is one) between the user's question, and the relevant questions and corresponding answers provided to you as context. Be direct and concise, and state how each piece of the context provided can be adapted to answer the user's question regarding mental health and OCD."},
+                {"role": "system", "content": "Your task is to adapt the relevant questions and corresponding answers to answer the user's question if they are relevant. Be direct and concise, and don't make up answers if you don't know, just say that you don't know. Only write what is necessary and relevant to the user's question, do not feel burdened to connect each relevant question/answer to the final answer."},
                 {"role": "user", "content": f"""
                  User question: {query.question}
                  {context}
