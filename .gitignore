@@ -139,3 +139,6 @@ cython_debug/
 
 # CSV files (assuming you do not wish to track these in version control)
 *.csv
+
+# TXT files
+*.txt
